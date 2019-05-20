@@ -7,7 +7,7 @@ function weatherapp(){
     function find(){
         var city = cityname.value;
         console.log(city);
-        fetch("http://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid="+API)
+        fetch("https://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid="+API)
             .then(resp => {
                 if(resp.status != 404){
                     resp.json().then(data => {
