@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class = "navbar">
+        <ul>
+            <li><a href = "#weather">Pogoda</a></li>
+            <li><a href = "#def">Definicja</a></li>
+            <li><a href = "#gallery">Galeria</a></li>
+        </ul>
+    </nav>
+    <div id="weather" class = "weathercontent">
+        <div class = "flexelement">
+            <input type="text" class="cityname" placeholder="Nazwa miasta">
+            <span class="fas fa-search search"></span>
+        </div>
+        <span  class="displaycontent">
+
+        </span>
+    </div>
+    <div id="def" class="definition">
+        <h1>Co to jest POGODA ? </h1>
+        <div class="definition_articles">
+            <ul>
+                <li><h1>Pierwszy</h1></li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam corrupti quas accusamus quod! Illum tenetur corrupti numquam quae cum? Ad alias consectetur asperiores modi dignissimos voluptatem rerum corporis nemo recusandae?</li>
+            </ul>
+            <ul>
+                <li><h1>Drugi</h1></li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In totam officia, doloremque deserunt eaque adipisci beatae nihil dignissimos minus rerum reprehenderit sunt ratione, facilis velit dolorem corrupti sed! Labore, quia.</li>
+            </ul>
+            <ul>
+                <li><h1>Trzeci</h1></li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eveniet dolorum nemo fugit, voluptatem at quisquam labore accusamus corporis vitae quaerat magni explicabo adipisci odit eaque commodi maiores tempore fuga!</li>
+            </ul>
+        </div>
+    </div>
+    <div id="gallery" class="gallery_content">
+    <h1>Galeria</h1>
+        <div  class="gallery">
+        <!---   Photo by Emre Can from Pexels 
+        Photo by eberhard grossgasteiger from Pexels-->
+        <span class="fas fa-arrow-left arrowl"></span>
+            <img src="img1.jpg" alt="weather" class="images">
+            <img src="img2.jpg" alt="weather" class="images hidden">
+            <img src="img3.jpg" alt="weather" class="images hidden">
+        <span class="fas fa-times x"></span>
+        <span class="fas fa-arrow-right arrowr"></span>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>    
+</html>
