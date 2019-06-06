@@ -35,6 +35,9 @@
     font-size: 2rem;
 }
 .flexelement{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 1%;
 }
 .search{
@@ -54,16 +57,21 @@
 .definition{
     text-align: center;
     padding: 1%;
-    height: 300px;
     margin-bottom: 10%;
 }
 .definition_articles{
-    margin-top: 1%;
+    margin: 1%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
 }
-
+.definition_articles ul{
+    width: 30%;
+}
+.definition_articles li{
+    list-style-type: none;
+    display: inline-block;
+}
 .images{
     height: 100%;
     width: 60%;
